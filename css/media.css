@@ -1,310 +1,214 @@
 
 @media screen and (max-width: 1200px){
-
+.navbar{
+    width: 20%;
+} 
 .notf-no{
         top: 1.25rem;
 }
 
 .left-image-box{
-    width: 50%;
+    width: 40%;
     flex-wrap: nowrap;
 }
 
 .left-image-box img{
-    width: 40%;
+    width: 50%;
 }
 
 .image-box-text{
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 10px;
 }
 
-    .third-section{
-    grid-column:  1 / span 6;
-    grid-row-start: 3;
-    width: 105%;
+.right-logo{
+    width: 50%;
 }
-
-.right-part{
+.left-right-card{
     width: 60%;
 }
 
-.fourth-section{
-    grid-column:  2 / span 3;
-    grid-column-start: 1;
-    grid-row-start: 7;
-    margin-top: 2.5rem;
+body{
+    gap: 8px;
+    grid-template-areas:
+    "div1 div1 div1 div1 div1 div1"
+    "div2 div2 div3 div3 div4 div4"
+    "div6 div6 div6 div9 div9 div9"
+    "div6 div6 div6 div9 div9 div9"
+    "div5 div5 div5 div5 div5 div5"
+    "div5 div5 div5 div5 div5 div5"
+    "div5 div5 div5 div5 div5 div5"
+    "div5 div5 div5 div5 div5 div5"
+    "div5 div5 div5 div5 div5 div5"
+    "div7 div7 div7 div10 div10 div10"
+    "div7 div7 div7 div10 div10 div10"
+    "div7 div7 div7 div10 div10 div10"
+    "div8 div8 div8 div11 div11 div11";
+    width: 80%;
 }
-.seventh-section{
-    grid-column:  2 / span 3;
-    grid-column-start: 4;
-    grid-row-start: 7;
-}
-
 .income-card{
-    margin-top: 70px;
-    margin-left: 50px;
+    margin-left: 0;
+    padding-block: 50px;
 }
-
-
-.sixth-section{
-    grid-column:  1 / span 3;
-    grid-row-start: 9;
-    margin-left: 20px;
+.activity-card{
+    margin-left: 10px;
 }
-.ninth-section{
-    grid-column:  1 / span 3;
-    grid-column-start: 4;
-    grid-row-start: 9;
+.table-card{
+    width: 97%;
+    margin-left: 10px;
+    margin-block: 15px;
 }
-
-.payment-card,.overview{
-    margin-top: -10px;
-}
-
-
-.fifth-section{
-    grid-column:  1 / span 3;
-    grid-column-start: 1;
-    grid-row-start: 13;
-}
-
-.eightth-section{
-    grid-column:  1 / span 3;
-    grid-column-start: 4;
-    grid-row-start: 15;
-    margin-left: 15px;
-    margin-top: 50px;
+.account-summery{
+    margin-top: 0;
+    margin-left: 0;
+    padding-block: 75px;
 }
 .receipt-card{
-    margin-top: -4.5rem;
+    margin-left: 10px;
 }
-
 }
-
 
 @media screen and (max-width: 992px){
+    body{
+        width: 100%;
+    }
     .navbar{
         display: none;
     }
-    .first-section{
-        grid-column:  1 / span 7;
-        grid-column-start: 1;
-        grid-row-start: 1;
-        width: 115%;
-    }
-    
-.card2-1{
-    grid-column:  1 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    margin-left: 45px;
-    width: 110%;
-}
-
-
-.card2-2{
-    grid-column:  1 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 2;
-    width: 110%;
-    margin-left: 100px;
-}
-
-.card2-3{
-    grid-column:  1 / span 2;
-    grid-column-start: 5;
-    grid-row-start: 2;
-    margin-inline: 50px;
-    margin-left: 150px;
-    width: 110%;
-}
-
-.third-section{
-    grid-column:  1 / span 7;
-    grid-column-start: 1;
-    grid-row-start: 3;
-    width: 110%;
-}
-
-
-.fourth-section{
-    grid-column:  2 / span 3;
-    grid-column-start: 1;
-    grid-row-start: 7;
-    margin-top: 2.5rem;
-}
-.seventh-section{
-    grid-column:  2 / span 4;
-    grid-column-start: 4;
-    grid-row-start: 7;
-}
-
-.income-card{
-    margin-top: 70px;
-    margin-left: 70px;
-}
-
-
-.sixth-section{
-    grid-column:  1 / span 3;
-    grid-row-start: 9;
-    margin-left: 20px;
-}
-.ninth-section{
-    grid-column:  1 / span 5;
-    grid-column-start: 3;
-    grid-row-start: 9;
-    margin-left: 140px;
-}
-
-.payment-card,.overview{
-    margin-top: -10px;
-}
-
-.eightth-section{
-    grid-column:  1 / span 4;
-    grid-column-start: 4;
-    grid-row-start: 15;
-    margin-left: 15px;
-    margin-top: 50px;
-}
-.receipt-card{
-    margin-top: -4.5rem;
-}
-
 }
 
 
 @media screen and (max-width: 768px){
-
-    .top-card-text{
-    width: 100%;
-}
-
-.right-part{
-    width: 65%;
-    font-size: 10px;
-}
-
-.right-logo{
-    width: 100%;
-}
-
-
-.left-right-card{
-    width: 90%;
-    margin-right: 10px;
+    .notf-no{
+        top: 2.3rem;
 }
 
 .left-image-box{
-    width: 60%;
+    margin-top: 20px;
+    width: 50%;
+    height: 70%;
     flex-wrap: nowrap;
 }
 
 .left-image-box img{
-    width: 35%;
+    width: 55%;
+    
 }
 
 .image-box-text{
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 10px;
 }
 
-.notf-no{
-    top: 12px;
+.right-part{
+    width: 60%;
+}
+.right-logo{
+    width: 75%;
+}
+.left-right-card{
+    width: 100%;
+}
 }
 
+@media screen and (max-width: 576px){
+    
+    body{
+    gap: 8px;
+    grid-template-areas:
+    "div1 div1 div1 div1 div1 div1"
+    "div2 div2 div2 div2 div2 div2"
+    "div3 div3 div3 div3 div3 div3"
+    "div4 div4 div4 div4 div4 div4"
+    "div6 div6 div6 div6 div6 div6"
+    "div5 div5 div5 div5 div5 div5"
+    "div7 div7 div7 div7 div7 div7"
+    "div8 div8 div8 div8 div8 div8"
+    "div9 div9 div9 div9 div9 div9"
+    "div10 div10 div10 div10 div10 div10"
+    "div11 div11 div11 div11 div11 div11";
+    width: 100%;
+    margin-left: 10px;
+}
+
+.card2-1,.card2-2,.card2-3{
+    width: 92%;
+}
+
+.activity-card{
+    width: 95%;
+}
+.perosnal-card-type,.perosnal-card-type2{
+    margin-right: 50px;
+}
+
+.table-card{
+    margin-block: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.account-summery{
+    margin-top: 0;
+    margin-left: 15px;
+    padding-block: 75px;
+    width: 92%;
+}
+
+.receipt-card,.payment-card,
+.overview,.income-card,.table-card{
+    margin-left: 15px;
+    width: 92%;
+}
 
 .first-section{
-        grid-column:  1 / span 6;
-        grid-column-start: 1;
-        grid-row-start: 1;
-        width: 135%;
-    }
-    
-.card2-1{
-    grid-column:  1 / span 7;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    margin-left: 30px;
-    width: 105%;
+    width: 94%;
 }
 
-.card2-2{
-    grid-column:  1 / span 7;
-    grid-column-start: 1;
-    grid-row-start: 3;
-    width: 105%;
-    margin-left: 37px;
+.card{
+    flex-direction: column;
 }
 
-.card2-3{
-    grid-column:  1 / span 7;
-    grid-column-start: 1;
-    grid-row-start: 4;
-    margin-left: 37px;
-    width: 105%;
+.left-part{
+    width: 100%;
+    justify-content: space-between;
 }
 
-.third-section{
-    grid-column:  1 / span 7;
-    grid-column-start: 1;
-    grid-row-start: 5;
-    width: 110%;
+.right-part{
+    width: 100%;
+    justify-content: space-around;
 }
 
 
-.fourth-section{
-    grid-column:  1 / span 7;
-    grid-column-start: 1;
-    grid-row-start: 6;
-    margin-top: 27rem;
-}
-
-
-.seventh-section{
-    grid-column:  1 / span 7;
-    grid-column-start: 1;
-    grid-row-start: 7;
-    margin-top: 20rem;
-    width: 105%;
-    margin-left: -2.5rem;
-}
-
-
-.sixth-section{
-    grid-column:  1 / span 7;
-    grid-row-start: 8;
-    margin-top: 18rem;
-    width: 105%;
-}
-
-.ninth-section{
-    grid-column:  1 / span 7;
-    grid-row-start: 9;
-    margin-top: 44rem;
-    width: 110%;
-    margin-left: 0.1rem;
-}
-
-
-.fifth-section{
-    /* display: none; */
-    grid-column:  1 / span 7;
-    grid-column-start: 1;
-    grid-row-start: 10;
-    margin-top: 75rem;
-    margin-left: 2.5rem;
-}
-
-
-.eightth-section{
+.image-box-text{
     display: none;
-    grid-column:  1 / span 6;
-    grid-column-start: 1;
-    grid-row-start: 11;
-} 
-
 }
 
+.left-image-box{
+    width: 15%;
+    padding: 5px;
+}
+
+.left-image-box img{
+    width: 100%;
+}
+
+button.bell-search{
+    margin-top: 15px;
+}
+
+.notf-no{
+    top: 1rem;
+}
+
+.right-logo{
+    width: 50%;
+}
+
+.top-card-text{
+    width: 45%;
+    font-size: 10px;
+}
+
+
+}

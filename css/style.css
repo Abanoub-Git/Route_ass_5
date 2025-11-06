@@ -8,10 +8,22 @@
 body{
     font-family: "Noto Kufi Arabic", sans-serif;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    gap: 8px;
-    margin-top: -50px;
+    gap: 12px;
+    grid-template-areas:
+    "div1 div1 div1 div1 div1 div1"
+    "div2 div2 div3 div3 div4 div4"
+    "div5 div5 div5 div5 div6 div6"
+    "div5 div5 div5 div5 div6 div6"
+    "div5 div5 div5 div5 div7 div7"
+    "div5 div5 div5 div5 div7 div7"
+    "div5 div5 div5 div5 div7 div7"
+    "div8 div8 div9 div9 div11 div11"
+    "div8 div8 div9 div9 div11 div11"
+    "div8 div8 div10 div10 div11 div11"
+    "div8 div8 div10 div10 div11 div11"
+    "div8 div8 div10 div10 div11 div11";
+    width: 82%;
+    margin-top: -3.75rem;
     
 }
 
@@ -34,13 +46,14 @@ body{
 .test6{
     background-color: aqua;
 }
+
 /* -----------------navbar--------------------- */
 .navbar {
     direction: rtl;
     position: fixed; 
     top: 0;
     right: 0; 
-    width: 20%;
+    width: 18%;
     height: 100vh; 
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     border: 1px solid rgba(118, 118, 118, 0.327);
@@ -170,15 +183,12 @@ h5{
 
 .first-section{
     direction: rtl;
-    width: 105%;
-    grid-column: span 6 / span 6;
-    grid-column-start: 1;
-    grid-row-start: 1;
+    width: 98%;
+    grid-area: div1;
 }
 
 .card{
-    width: 95%;
-    margin: auto;
+    margin-left: 15px;
     margin-top: 5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     background-color: #FAFCFE;
@@ -304,13 +314,14 @@ button.bell-search:hover{
 
 
 .card2-1,.card2-2,.card2-3{
-    width: 95%;
+    width: 90%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     direction: rtl;
     background: #fff;
     border-radius: 12px;
-    padding: 1.25rem;
-    margin-top: 50px; /*el3b el3b el3b ah ya bebo*/
+    padding: 1rem;
+    margin-block: 20px;
+    margin-left: 15px;
 }
 
 .text{
@@ -333,24 +344,17 @@ button.bell-search:hover{
 }
 
 .card2-1{
-    grid-column: span 2 / span 2;
-    grid-row-start: 2;
-    margin-left: 1.5625rem;
+    grid-area: div2;
+    padding-left: 70px;
 }
 
 
 .card2-2{
-    grid-column: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 2;
-    margin-left: 2.1875rem;
+    grid-area: div3;
 }
 
 .card2-3{
-    grid-column: span 2 / span 2;
-    grid-column-start: 5;
-    grid-row-start: 2;
-    margin-left: 2.8125rem;
+    grid-area: div4;
 }
 
 /* -----------------third part----------------- */
@@ -358,15 +362,13 @@ button.bell-search:hover{
 
 
 .third-section{
-    grid-column: span 4 / span 4;
-    grid-row: span 5 / span 5;
-    grid-row-start: 3;
+    grid-area: div5;
 }
 
 .table-card{
+    width: 95%;
     direction: rtl;
     margin-left: 1.5625rem;
-    margin-block: 1.5625rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     border-radius: 10px;
     padding-block: 1.5625rem;
@@ -568,17 +570,12 @@ button.bell-search:hover{
 /* --------------fourth section--------------- */
 
 .fourth-section{
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-column-start: 5;
-    grid-row-start: 3;
-    width: 115%;
+    grid-area: div6;
+    width: 97%;
 }
 
 .activity-card{
     direction: rtl;
-    margin-inline: 1.25rem;
-    margin-block: 1.5625rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     border-radius: 10px;
     padding-block: 1.5625rem;
@@ -682,21 +679,17 @@ button.bell-search:hover{
 /* -----------------fifth section-------------- */
 
 .fifth-section{
-    grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
-    grid-column-start: 5;
-    grid-row-start: 5;
+    grid-area: div7;
 }
 
 .receipt-card{
     direction: rtl;
-    width: 105%;
-    margin-inline: .9375rem;
+    width: 97%;
+    margin-bottom: .625rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     border-radius: 10px;
     padding-block: 1.5625rem;
     padding-inline: 1.25rem;
-    margin-top: -1.20rem;
 }
 
 
@@ -786,9 +779,7 @@ p.card-time4{
 /* ----------------sixth section--------------- */
 
 .sixth-section{
-    grid-column: span 2 / span 2;
-    grid-row: span 5 / span 5;
-    grid-row-start: 8;
+    grid-area: div8;
 }
 
 .payment-card{
@@ -800,7 +791,6 @@ p.card-time4{
     padding-bottom: 15.625rem;
     padding-inline: .9375rem;
     margin-left: .9375rem;
-    margin-top: -10.8125rem;
 }
 
 
@@ -1263,21 +1253,17 @@ p.card-time4{
 /* ----------------------seventh section---------------------- */
 
 .seventh-section{
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 8;
+    grid-area: div9;
 }
 
 .income-card{
     direction: rtl;
-    width: 100%;
+    width: 95%;
     margin-left: 1.875rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     border-radius: 10px;
     padding-block: 1.5625rem;
     padding-inline: 1.25rem;
-    margin-top: -10.8125rem;
 }
 
 .chart-content{
@@ -1345,21 +1331,18 @@ p.card-time4{
 /* ------------------eightth section----------------- */
 
 .eightth-section{
-    grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
-    grid-column-start: 3;
-    grid-row-start: 10;
+    grid-area: div10;
 }
 
 .account-summery{
     direction: rtl;
-    width: 100%;
+    width: 95%;
     margin-left: 1.875rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     border-radius: 10px;
     padding-block: 1.5625rem;
     padding-inline: 1.25rem;
-    margin-top: -17.5rem;
+    margin-top: -9.5rem;
 }
 
 .a-card{
@@ -1427,21 +1410,17 @@ p.card-time4{
 /* ------------------------9th section---------------- */
 
 .ninth-section{
-    grid-column: span 2 / span 2;
-    grid-row: span 5 / span 5;
-    grid-column-start: 5;
-    grid-row-start: 8;
+    grid-area: div11;
 }
 
 .overview{
     direction: rtl;
-    width: 95%;
-    margin-left: 2.5rem;
+    width: 92%;
+    margin-left: 1rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     border-radius: 10px;
     padding-block: 1.5625rem;
     padding-inline: 1.25rem;
-    margin-top: -10.8125rem;
 }
 
 .over-heading h3{
